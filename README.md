@@ -1,16 +1,41 @@
-# React + Vite
+# HalalNadi — RHYNO DEVS
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Halal Compliance Support Platform | Frontend Prototype**
 
-Currently, two official plugins are available:
+HalalNadi is a frontend prototype developed by **RHYNO DEVS** as part of the Gamuda AI Academy learning and presentation project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Overview
 
-## React Compiler
+HalalNadi aims to support businesses and consumers by providing easier access to halal-related information, document preparation guidance, and certification references.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Main Features
 
-## Expanding the Oxlint configuration
+- **Welcome Page** — Introduction to HalalNadi
+- **Dashboard** — Overview of the platform's main features
+- **AI Halal Assistant (Demo)** — Interactive chatbot with predefined responses
+- **Certificate Library** — Halal certification authority references
+- **Logo Verification (Prototype)** — Interface supporting halal logo verification guidance
+- **Halal News** — Halal industry news interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Technology
+
+- React
+- Vite
+- JavaScript (JSX)
+- CSS
+
+## Important Disclaimer
+
+HalalNadi is a learning prototype and does not issue, approve, or officially verify halal certificates or logos.
+
+Official halal certification and verification must be referred to the relevant authorities, including JAKIM and authorised Malaysian state religious authorities.
+
+## Project Team
+
+**RHYNO DEVS**
+
+Gamuda AI Academy — Sabah Campus
+
+## Project Status
+
+Frontend prototype for learning, demonstration, and presentation. Some features are simulations and are not connected to live verification services.
