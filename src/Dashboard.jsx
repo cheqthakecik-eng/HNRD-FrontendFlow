@@ -3,6 +3,7 @@ function Dashboard({
   onOpenCertificates,
   onOpenVerification,
   onOpenNews,
+  onOpenMobile,
 }) {
   const features = [
     {
@@ -25,6 +26,11 @@ function Dashboard({
       title: "News & Training",
       description: "Discover halal news, updates and training.",
     },
+    {
+      icon: "📱",
+      title: "Mobile Home",
+      description: "Access HalalNadi mobile features and scan QR codes.",
+    },
   ];
 
   const handleFeatureClick = (title) => {
@@ -36,6 +42,8 @@ function Dashboard({
       onOpenVerification();
     } else if (title === "News & Training") {
       onOpenNews();
+    } else if (title === "Mobile Home") {
+      onOpenMobile();
     }
   };
 

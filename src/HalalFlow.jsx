@@ -5,6 +5,8 @@ import HalalAssistant from "./HalalAssistant.jsx";
 import CertificateLibrary from "./CertificateLibrary.jsx";
 import LogoVerification from "./LogoVerification.jsx";
 import HalalNews from "./HalalNews.jsx";
+import MobileHome from "./MobileHome";
+import HalalVerify from "./HalalVerify";
 
 function HalalFlow() {
   const [page, setPage] = useState("welcome");
@@ -24,6 +26,19 @@ function HalalFlow() {
     return <HalalNews onBack={() => setPage("dashboard")} />;
   }
 
+  if (page === "mobile") {
+    return (
+      <MobileHome
+        onScan={() => setPage("scanner")}
+        onBack={() => setPage("dashboard")}
+      />
+    );
+  }
+
+  if (page === "scanner") {
+    return <HalalVerify onBack={() => setPage("mobile")} />;
+  }
+
   if (page === "dashboard") {
     return (
       <Dashboard
@@ -31,6 +46,7 @@ function HalalFlow() {
         onOpenCertificates={() => setPage("certificates")}
         onOpenVerification={() => setPage("verification")}
         onOpenNews={() => setPage("news")}
+        onOpenMobile={() => setPage("mobile")}
       />
     );
   }
